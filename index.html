@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>M3U Link Checker</title>
+  <title>M3U Inspector</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>M3U Link Checker</h1>
-  <p>Paste your M3U content below:</p>
-  <textarea id="playlist" placeholder="#EXTM3U&#10;http://example.com/stream1.m3u8&#10;http://example.com/stream2.m3u8"></textarea>
-  <button onclick="checkLinks()">Check Links</button>
-  <ul id="result"></ul>
-
+  <div class="container">
+    <h1>M3U Link Inspector</h1>
+    <input type="text" id="m3uUrl" placeholder="Enter M3U URL here..." />
+    <button onclick="fetchM3U()">Inspect</button>
+    
+    <section id="info" class="card hidden"></section>
+    <section id="channels" class="card hidden">
+      <h2>Available Channels</h2>
+      <ul id="channelList"></ul>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
