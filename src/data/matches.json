@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Real Madrid vs Barcelona",
+    "stream": "https://yourdomain.com/stream/real-madrid-vs-barcelona.m3u8 "
+  },
+  {
+    "id": 2,
+    "title": "Manchester United vs Liverpool",
+    "stream": "https://yourdomain.com/stream/manutd-vs-liverpool.m3u8 "
+  }
+]
